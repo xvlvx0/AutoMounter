@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_quit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>641</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideRight</enum>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>Mounts</string>
+     </attribute>
+     <widget class="QFrame" name="frame_box_mountpoints">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_name">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>50</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Name:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_mounted">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>10</y>
+         <width>70</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mounted:</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>281</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_mountpoints">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_set_1">
+          <property name="spacing">
+           <number>-1</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_1"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_1">
+            <property name="text">
+             <string>Mount</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkBox_1">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_box_textwindow">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>0</y>
+        <width>331</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>311</width>
+         <height>391</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_cleartext">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>400</y>
+         <width>81</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Config</string>
+     </attribute>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>631</width>
+        <height>401</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_save">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>400</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_cancel">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>400</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>660</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionquit"/>
+   </widget>
+   <widget class="QMenu" name="menuabout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionshow_about"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuabout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionopen">
+   <property name="text">
+    <string>Open config</string>
+   </property>
+  </action>
+  <action name="actionclose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionquit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionwrite">
+   <property name="text">
+    <string>Write config</string>
+   </property>
+  </action>
+  <action name="actionedit_config">
+   <property name="text">
+    <string>Edit config</string>
+   </property>
+  </action>
+  <action name="actionshow_about">
+   <property name="text">
+    <string>Show about</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>textBrowser</tabstop>
+  <tabstop>pushButton_cleartext</tabstop>
+  <tabstop>lineEdit_1</tabstop>
+  <tabstop>pushButton_1</tabstop>
+  <tabstop>checkBox_1</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
