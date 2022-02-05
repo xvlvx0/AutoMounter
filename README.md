@@ -23,5 +23,6 @@ If there are errors or unwanted behavior please check the log file.
 
 ## Installation
 
-To use it as a MacOS App, run the 'make' command in the folder. The make script will use the pyinstaller to create an App.
-The App can be found in ./dist/ copy the automounter.app to you ~/Applications folder.
+To use it as a MacOS App, run the 'make' command in the folder. The make script will use the 'pyinstaller' to create an App.
+After compiling the App can be found in: "./dist/". Copy the 'automounter.app' to your '~/Applications' folder.
+*Remarks: If needed install the 'pyinstaller' package.
